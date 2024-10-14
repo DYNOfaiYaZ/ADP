@@ -1,0 +1,76 @@
+#include <iostream>
+using namespace std;
+
+bool uniquenum(int num) 
+{
+    bool digits[10] = {false}; 
+
+    while (num > 0) 
+    {
+        int digit = num % 10;  
+        if (digits[digit]) 
+        {   
+            return false;
+        }
+        digits[digit] = true;  
+        num /= 10;  
+    }
+
+    return true;  
+}
+int main() 
+{
+    int a,b;
+    cin >>a>>b;
+    for (int i = a; i <= b; i++) 
+    {
+        if (uniquenum(i)) 
+        {  
+            cout << i << " ";  
+        }
+    }
+    cout << endl;
+}
+
+*************************************************
+
+code 2 without arrays
+______________________
+
+#include <iostream>
+using namespace std;
+
+bool uniquenum(int num)
+{
+    int repeat = 0; 
+    while (num > 0) 
+    {
+        int digit = num % 10;  
+        
+        if (repeat & (1 << digit)) 
+        {
+            return false;  
+        }
+        repeat |= (1 << digit);
+
+        num /= 10;  
+    }
+
+    return true;  
+}
+
+int main() {
+    int a,b;
+    cin>>a>>b;
+    for (int i = a; i <= b; i++) 
+    {
+        if (uniquenum(i)) 
+        {  
+            cout << i << " ";  
+        }
+    }
+
+    cout << endl;
+    return 0;
+}
+

@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int n;
+    cin>>n;
+    int sum = 0;
+    
+   for(int d = 1; d < n; d++){
+        if(n%d == 0)
+            sum=d;
+    }
+    
+    sum==2?cout<<n<<" is not a prime number":cout<<n<<" is a prime number";
+    
+        
+}

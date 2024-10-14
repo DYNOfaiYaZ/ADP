@@ -1,0 +1,69 @@
+***********************************
+#include <iostream>
+#include <iomanip>
+using namespace std;
+int main()
+{
+    float q,w,e,r,t;
+    cin>>q>>w>>e>>r>>t;
+    float avg = q+w+e+r+t;
+    cout<<fixed<<setprecision(2)<<avg/5;
+}
+******************************************
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a;
+    cin>>a;
+    if(a%2==0)
+    {
+        cout<<"Even";
+    }
+    else
+    {
+        cout<<"Odd";
+    }
+}
+****************************************
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a,b,c;
+    int u,v;
+    int y;
+    int i,j,k;
+    cin>>a>>b>>c>>u>>v>>i>>j>>k;
+    int x=a + b * 5 / 4 +c % 3*5;
+    u>v?y=u:y=v;
+    int z = ++i&&++j&&++k;
+    cout<<"x = "<<x;
+    cout<<"y = "<<y;
+    cout<<"z = "<<z;
+}
+*****************************************
+#include <iostream>
+#include <iomanip>
+#include <math.h>
+using namespace std;
+int main()
+{
+    float a,b;
+    cin>>a>>b;
+    float diff=b-a;
+    float cost=diff*25;
+    cout<<fixed<<setprecision(2)<<diff<<" "<<round(cost);
+    
+}
+***********************************************
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    float a,b;
+    cin>>a>>b;
+    float atndc=b*100/a;
+    cout<<int(atndc)<<"%";
+}

@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+int c;
+int count =0;
+cin>>c;
+        for(int i=1;i<=c;i++)
+        {
+            if (c%i==0)
+            {
+            count++;
+            }
+        }
+    if (count==2)
+    {
+        cout<<"prime";
+    }
+    else
+    {
+        cout<<"not prime";
+    }
+}

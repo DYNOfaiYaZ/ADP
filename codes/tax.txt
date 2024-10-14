@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    float a;
+    cin>>a;
+    float tax = a*92/100;
+    cout<<"Assessed value : "<<a<<endl;
+    cout<<"Taxable amount : "<<tax<<endl;
+    cout<< "Tax Rate for each Rs.100 : 1.05"<<endl;
+    float ptax = (tax/100)*1.05;
+    cout<<"Property tax : "<<ptax<<endl;
+    
+}

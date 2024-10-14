@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int r,c,row,col;
+    cin>>r>>c;
+    for(row=1;row<=r;row++)
+    {
+        for(col=1;col<=c;col++)
+        {
+               if(row==1 || row==r || col==1 || col==c)
+               {
+                   cout<<"* ";
+               }
+               else
+               {
+                   cout<<"  ";
+               }
+        }
+        
+        cout<<endl;
+    }
+}
